@@ -1,4 +1,4 @@
-const questions = {
+{
     "question1": {
         "question": "Dünyanın en iyi yazılım dili hangisidir?",
         "option1": "JavaScript",
@@ -38,5 +38,5 @@ const questions = {
         "option3": "PostgreSQL",
         "option4": "Redis",
         "answer": "MongoDB"
-    },
+    }
 }

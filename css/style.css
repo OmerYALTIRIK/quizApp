@@ -1,22 +1,12 @@
 @import url(/css/normalize.css);
+@import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:400,700&display=swap);
 body {
-  background-color: #f3f3f3;
-  font-family: "Roboto", sans-serif;
+  background-color: #b89191;
+  font-family: "JetBrains Mono", monospace;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.5;
   color: #333;
-  margin: 0;
-  padding: 0;
 }
-
-main {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0 15px;
-  /* display: none; */
-}
-
 header {
   background-color: #fff;
   border-bottom: 1px solid #eee;
@@ -25,6 +15,18 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 section .question {
@@ -36,5 +38,3 @@ section .question {
   justify-content: space-between;
   align-items: center;
 }
-
-
