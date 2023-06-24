@@ -1,16 +1,16 @@
 @import url(/css/normalize.css);
 @import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:400,700&display=swap);
 body {
-  background-color: #aa1414;
+  background-color: #dec5c5;
   font-family: "JetBrains Mono", monospace;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
 }
-
-header {
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
+body header {
+  background-color: #4d4242;
+  border-bottom: 5px solid #eee;
+  color: #eee;
   padding: 15px 0;
   display: flex;
   flex-direction: column;
@@ -29,8 +29,29 @@ main {
   flex-wrap: wrap;
   gap: 30px;
 }
+main .questionsArea {
+  margin: 50px auto;
+}
+main .questionsArea .questionOrder progress {
+  border: none;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.25);
+  width: 500px;
+  height: 30px;
+  border-radius: 6px;
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.75), 0 1px rgba(255, 255, 255, 0.08);
+}
+main .questionsArea .questionOrder progress[value]::-webkit-progress-bar {
+  width: 100%;
+  background: transparent;
+  border-radius: 6px;
+}
+main .questionsArea .questionOrder progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(135deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)), -webkit-linear-gradient(left, #09c, #f44);
+  border-radius: 6px;
+}
 main .questionsArea #question {
-  background-color: #fff;
+  background-color: #bfa0a0;
   border: 1px solid black;
   border-radius: 5px;
   padding: 15px 0;
