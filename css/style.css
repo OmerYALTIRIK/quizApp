@@ -17,8 +17,7 @@ body header {
   justify-content: space-between;
   align-items: center;
 }
-
-main {
+body main {
   margin: 0 auto;
   max-width: fit-content;
   padding: 0 15px;
@@ -29,36 +28,91 @@ main {
   flex-wrap: wrap;
   gap: 30px;
 }
-main .questionsArea {
+body main .questionsArea {
   margin: 50px auto;
+  min-width: 100%;
+  max-width: fit-content;
 }
-main .questionsArea .questionOrder progress {
+body main .questionsArea .questionOrder progress {
   border: none;
   padding: 6px;
   background: rgba(0, 0, 0, 0.25);
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 30px;
   border-radius: 6px;
   box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.75), 0 1px rgba(255, 255, 255, 0.08);
 }
-main .questionsArea .questionOrder progress[value]::-webkit-progress-bar {
+body main .questionsArea .questionOrder progress[value]::-webkit-progress-bar {
   width: 100%;
   background: transparent;
   border-radius: 6px;
 }
-main .questionsArea .questionOrder progress[value]::-webkit-progress-value {
+body main .questionsArea .questionOrder progress[value]::-webkit-progress-value {
   background-image: -webkit-linear-gradient(135deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)), -webkit-linear-gradient(left, #09c, #f44);
   border-radius: 6px;
 }
-main .questionsArea #question {
+body main .questionsArea #question {
   background-color: #bfa0a0;
   border: 1px solid black;
-  border-radius: 5px;
-  padding: 15px 0;
+  border-radius: 10px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body main .answerArea {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+body main .answerArea .answerButton {
+  padding: 12px 20px;
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body main .answerArea .answerButton:hover {
+  background-color: #ff6347;
+}
+body main .controlArea .nextButton {
+  padding: 12px 20px;
+  background-color: #20b2aa;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+body main .controlArea .nextButton:hover {
+  background-color: #008080;
+}
+body main .scoreArea .scoreButton {
+  padding: 12px 20px;
+  background-color: #9932cc;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+body main .scoreArea .scoreButton:hover {
+  background-color: #8a2be2;
 }
 
 /*# sourceMappingURL=style.css.map */
