@@ -18,7 +18,7 @@ body header {
   align-items: center;
 }
 body main {
-  margin: 0 auto;
+  margin: 250px auto;
   max-width: fit-content;
   padding: 0 15px;
   display: flex;
@@ -62,9 +62,8 @@ body main .questionsArea #question {
   justify-content: center;
   align-items: center;
   text-align: center;
-  white-space: nowrap;
+  white-space: break-spaces;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 body main .answerArea {
   display: grid;
@@ -90,6 +89,7 @@ body main .answerArea .answerButton:hover {
 }
 body main .controlArea .nextButton {
   padding: 12px 20px;
+  margin: 20px auto;
   background-color: #20b2aa;
   color: #fff;
   border: none;
