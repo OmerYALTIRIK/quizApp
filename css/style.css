@@ -133,4 +133,12 @@ body main .scoreArea .scoreButton:hover {
   background-color: #8a2be2;
 }
 
+.correct {
+  background-color: #008000;
+}
+
+.wrong {
+  background-color: #ff0000;
+}
+
 /*# sourceMappingURL=style.css.map */
