@@ -161,3 +161,19 @@ body {
     }
   }
 }
+
+
+
+.hidden {
+  display: none;
+}
+
+.correct {
+  color: green;
+  background-color: #ddffdd;
+}
+
+.wrong {
+  color: red;
+  background-color: #ffdddd;
+}
