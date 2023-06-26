@@ -104,7 +104,7 @@ body {
 
     .answerArea {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
       gap: 15px;
 
       .answerButton {
@@ -146,6 +146,7 @@ body {
     }
 
     .scoreArea {
+      margin: 20px auto;
       .scoreButton {
         padding: 12px 20px;
         background-color: #9932cc;

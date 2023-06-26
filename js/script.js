@@ -8,6 +8,7 @@ const answerButtons = document.querySelectorAll(".answerButton");
 const nextButton = document.querySelector(".nextButton");
 const scoreArea = document.querySelector(".scoreArea");
 const scoreButton = document.querySelector(".scoreButton");
+const app = document.querySelector(".app");
 
 
 const questions = [
@@ -98,14 +99,19 @@ function nextQuestion() {
   if (currentQuestionIndex < questions.length) {
     showQuestion();
   } else {
-    showScore();
+    showScoreButton();
   }
+}
+
+function showScoreButton() {
+  nextButton.style.display = "none";
+  scoreArea.style.display = "block";
 }
 
 scoreButton.addEventListener("click", showScore);
 
 function showScore() {
-  main.style.display = "none";
+  app.style.display = "none";
   scoreArea.style.display = "block";
   const scoreText = document.getElementById("scoreText");
   scoreText.textContent = `Doğru: ${score} - Yanlış: ${questions.length - score}`;
@@ -128,3 +134,5 @@ function showScore() {
     scoreList.appendChild(listItem);
   });
 }
+
+

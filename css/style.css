@@ -82,7 +82,7 @@ body main .questionsArea #question {
 }
 body main .answerArea {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   gap: 15px;
 }
 body main .answerArea .answerButton {
@@ -115,6 +115,9 @@ body main .controlArea .nextButton {
 }
 body main .controlArea .nextButton:hover {
   background-color: #008080;
+}
+body main .scoreArea {
+  margin: 20px auto;
 }
 body main .scoreArea .scoreButton {
   padding: 12px 20px;
