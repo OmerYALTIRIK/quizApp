@@ -10,6 +10,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
+  max-height: 100dvh;
+  overflow: hidden;
 
   header {
     background-color: $bg-gradient;
@@ -160,20 +162,4 @@ body {
       }
     }
   }
-}
-
-
-
-.hidden {
-  display: none;
-}
-
-.correct {
-  color: green;
-  background-color: #ddffdd;
-}
-
-.wrong {
-  color: red;
-  background-color: #ffdddd;
 }

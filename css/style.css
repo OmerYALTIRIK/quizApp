@@ -6,6 +6,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
+  max-height: 100dvh;
+  overflow: hidden;
 }
 body header {
   background-color: linear-gradient(to right, rgb(56, 189, 248), rgb(186, 230, 253));
@@ -126,20 +128,6 @@ body main .scoreArea .scoreButton {
 }
 body main .scoreArea .scoreButton:hover {
   background-color: #8a2be2;
-}
-
-.hidden {
-  display: none;
-}
-
-.correct {
-  color: green;
-  background-color: #ddffdd;
-}
-
-.wrong {
-  color: red;
-  background-color: #ffdddd;
 }
 
 /*# sourceMappingURL=style.css.map */
